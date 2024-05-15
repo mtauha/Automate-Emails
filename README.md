@@ -56,15 +56,25 @@ This is a Python application that demonstrates how to send emails using the SMTP
    ```python
    instance.login()
    ```
+
+   ##### Note:
+
+   If you are experiencing this error please visit this [link](https://www.letscodemore.com/blog/smtplib-smtpauthenticationerror-username-and-password-not-accepted/):
+
+
+   ```
+   Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 
+   ```
 4. Send an email:
 
-   ```python
+```python
    subject = "Testing Script"
    body = "This is a test email."
    to_email = "recipient@example.com"
 
    instance.send(subject, body, to_email)
-   ```
+```
+
 5. Close the connection when done:
 
    ```python
