@@ -1,4 +1,3 @@
-
 # Python Email Client
 
 This is a Python application that demonstrates how to send emails using the SMTP protocol. It includes a `EmailClient` class that encapsulates the functionality for connecting to an SMTP server, logging in, sending emails, and closing the connection.
@@ -71,6 +70,26 @@ This is a Python application that demonstrates how to send emails using the SMTP
    ```python
    instance.close()
    ```
+
+
+## Usage with Docker
+
+To run the Python Email Client application using Docker, follow these steps:
+
+1. Build the Docker image from the project directory:
+
+   ```bash
+   docker build -t Automate-Emails .
+   ```
+2. Run a Docker container from the created image:
+
+   ```bash
+   docker run -it --rm --env-file .env Automate-Emails
+   ```
+
+   Replace `.env` with the path to your environment file containing email credentials and SMTP server information.
+
+This will start the Python Email Client application inside a Docker container, and you should see the output in the terminal indicating the status of the email sending process.
 
 ## Contributing
 
